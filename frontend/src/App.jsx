@@ -1,10 +1,14 @@
-
+import { BrowserRouter } from "react-router-dom"
+import { RecoilRoot } from "recoil"
+import { AppRoutes } from "./AppRoutes"
 function App() {
 
   return (
-    <div>
-        Hello world
-    </div>
+    <BrowserRouter>
+      <RecoilRoot>
+        <AppRoutes></AppRoutes>
+      </RecoilRoot>
+    </BrowserRouter>
   )
 }
 
